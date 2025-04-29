@@ -1,0 +1,189 @@
+@keyframes darkMode { 
+
+    to {transform: translateX(150%); 
+        transition: 0.3s ease-in ;
+        cursor: pointer;
+         right: 100%;
+         top: 2px;
+        }
+    
+    }
+    
+    
+    
+    
+    
+    body{
+        background-color: antiquewhite;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+    }
+    
+    .dark-mode-container{
+        position: absolute;
+        /*border: green 2px solid;*/
+        top: 10px;
+        right: 10px;
+        width: 100px;
+    }
+    
+    .button-dark{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        border-radius: 25px;
+        border: solid 2px rgb(0, 0, 0);
+        background-color: hsl(300, 83%, 40%);
+    }
+    
+    .circle:hover {
+        background-color: rgb(0, 4, 58);
+        cursor: pointer;
+          
+    }
+    
+    
+    .circle{
+        position: absolute;
+        width: 35%;
+        height: 80%;
+        border: white 1px solid;
+        border-radius: 50%;
+        left: 3px;
+        top: 49%;
+        transform: translateY(-50%);
+        
+    }
+    
+    
+    .calcualtrice-container{
+        border: 2px solid black;
+        position: relative;
+        width: 30%;
+        height: 70%;
+        min-width: 300px;
+        max-width: 300px;
+        background-color: rgb(255, 198, 124);
+        padding-left: 5px;
+        
+    }
+    
+    input{
+        width: 99%;
+        height: 10%;
+        text-align: right;
+        border: none; 
+        background-color:transparent;
+        font-size: 2rem;   
+        outline: none;
+        padding-left: -30px;
+        color: black;
+    }
+    
+    
+    .operators-container{
+        /*border: 2px solid rgb(255, 72, 0); */
+        width: 99%;
+        height: 15%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .button-operators{
+     /*border: 2px solid green; */
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: hwb(22 3% 13%);
+    font-size: 1.5rem;
+    
+    }
+    
+    .numbers-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    /*border: 2px solid white; */
+    width: 75%;
+    height: 70%;
+    gap: 5px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    
+    }
+    
+    .button-numbers{
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #a579ce;
+    
+    }
+    
+    .equal{
+    position: absolute;
+    top: 27%;
+    right: 2%;
+    bottom: 5px;
+    width: 20%;
+    border-radius: 35px;
+    font-size: 1.5rem;
+    background-color: #66ffff;
+    }
+    
+    .button-operators:hover{
+        background-color: hsl(22, 93%, 50%);
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    
+    
+    
+    .equal:hover{
+    background-color: hsl(180, 100%, 80%);
+    font-size: 2rem;
+    cursor: pointer;
+    }
+    
+    .button-numbers:hover{
+        background-color: hsl(271, 46%, 72%);
+        cursor: pointer;
+        font-size: 1.6rem;
+    
+    
+    }
+    
+    .calcualtrice-container:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0,0.6);
+    }
+
+    
+    /*
+    
+    
+    .equal::after{
+        content: '😂';
+        opacity: 0;
+    }
+    
+    .equal:active::after{
+        position: absolute;
+        font-size: 2%;
+        transition: 0.1s;
+    }
+    
+    
+    .equal:hover::after{
+        opacity: 1;
+        transition: 0.3s;
+    }
+        
